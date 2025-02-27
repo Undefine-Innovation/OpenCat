@@ -1,58 +1,57 @@
 # OpenCat
 
-OpenCat is the open-source Arduino and Raspberry Pi-based quadruped robotic pet framework developed by Petoi, the maker of futuristic programmable robotic pets.
+OpenCat 是由 Petoi（未来可编程机器人宠物的制造商）开发的一款基于 Arduino 和 Raspberry Pi 的四足机器人宠物框架。
 
 ![](https://github.com/PetoiCamp/NonCodeFiles/blob/master/gif/walk.gif?raw=true)
 
 ![](https://github.com/PetoiCamp/NonCodeFiles/blob/master/gif/run.gif?raw=true)
 
-Inspired by Boston Dynamics' Big Dog and Spot Mini, Dr. Rongzhong Li started the project in his dorm at Wake Forest University in 2016. After one year of R&D, he founded Petoi LLC and devoted all his resources to developing open source robots. 
+受到波士顿动力公司的 Big Dog 和 Spot Mini 的启发，李荣忠博士于2016年在维克森林大学的宿舍开始了这个项目。经过一年的研发，他创立了 Petoi LLC，并投入所有资源来开发开源机器人。
 
-The goal is to foster collaboration in quadruped(four-legged) robotic research, education, and engineering development of agile and affordable quadruped robot pets, bring STEM concepts to the mass, and inspire newcomers (including many kids and adults) to join the robotic AI revolution to create more applications.
+该项目的目标是促进四足机器人研究、教育和工程开发的合作，推动敏捷且经济实惠的四足机器人宠物的发展，向大众普及STEM概念，并激励新人（包括许多孩子和成人）加入机器人AI革命，创造更多应用。
 
 ![](https://github.com/PetoiCamp/NonCodeFiles/blob/master/gif/slope.gif?raw=true)
 
-The project is [a complex quadruped robot system](https://www.petoi.com/pages/petoi-programmable-quadruped-robot-system) for anyone exploring quadruped robotics. We want to share our design and work with the community and bring down the hardware and software costs with mass production. OpenCat has been deployed on all Petoi's bionic palm-sized, realistic lifelike [cute robot cat Nybble](https://www.petoi.com/collections/robots/products/petoi-nybble-robot-cat?utm_source=github&utm_medium=code&utm_campaign=nybble) and
-[high-performance robot dog Bittle](https://www.petoi.com/collections/robots/products/petoi-bittle-robot-dog?utm_source=github&utm_medium=code&utm_campaign=bittle). We now have established a production line and can ship these [affordable robotic kits and accessories](https://www.petoi.com/store?utm_source=github&utm_medium=code&utm_campaign=store) worldwide.
+这个项目是一个复杂的四足机器人系统，适用于任何探索四足机器人的爱好者。我们希望与社区分享我们的设计和工作成果，并通过大规模生产降低硬件和软件成本。OpenCat 已部署在 Petoi 所有的仿生手掌大小、逼真的 [可爱机器猫 Nybble](https://www.petoi.com/collections/robots/products/petoi-nybble-robot-cat?utm_source=github&utm_medium=code&utm_campaign=nybble) 和高性能机器狗 [Bittle](https://www.petoi.com/collections/robots/products/petoi-bittle-robot-dog?utm_source=github&utm_medium=code&utm_campaign=bittle) 上。我们现在已经建立了生产线，可以将这些 [经济实惠的机器人套件和配件](https://www.petoi.com/store?utm_source=github&utm_medium=code&utm_campaign=store) 发送到全球各地。
 
-This project provides a base open source platform to create amazing programmable gaits, locomotion, and deployment of inverse kinematics quadruped robots and bring simulations to the real world via block-based coding/C/C++/Python programming languages.  
+此项目提供了一个基础的开源平台，用于创建惊人的可编程步态、运动和逆运动学四足机器人的部署，并通过基于块的编码/C/C++/Python 编程语言将模拟带到现实世界中。
 
-Our users have deployed many robotics/AI/IoT applications:
-- [robot dog with autonomous movement & object detection](https://www.petoi.com/blogs/blog/reid-graves-robotics-ai-applications-with-bittle-robot-dog-raspberry-pi)
-- [Raspberry Pi robotics projects](https://www.petoi.com/blogs/blog/raspberry-pi-robotics-projects-with-petoi-open-source-quadruped-robots)
-- [NVIDIA Issac simulations and reinforcement learning on our robots](https://www.youtube.com/playlist?list=PLHMFXft_rV6MWNGyofDzRhpatxZuUZMdg)
-- [developed visual and lidar-based SLAM with ROS using Bittle and Raspberry Pi](https://www.youtube.com/watch?v=uXpQUIF_Jyk&list=PLHMFXft_rV6MWNGyofDzRhpatxZuUZMdg&index=6)
-- [imitation learning using Tiny Machine Learning Models with Petoi Bittle and Raspberry Pi](https://www.learnwitharobot.com/p/imitation-learning-with-petoi-bittle)
-- [IoT automation of a robot fleet with AWS to improve worker safety](https://www.petoi.com/blogs/blog/aws-iot-robot-fleet-demo-with-petoi-bittle)
-- [3D-Printed Accessories](https://www.petoi.com/blogs/blog/petoi-bittle-bittle-x-robots-3d-printed-robot-accessories)
-- build their own [DIY 3D-print robot pets](https://www.petoi.com/pages/3d-printed-robot-dog-robot-cat) powered by OpenCat
+我们的用户已部署了许多机器人/AI/IoT 应用程序：
+- [具有自主移动和物体检测功能的机器人狗](https://www.petoi.com/blogs/blog/reid-graves-robotics-ai-applications-with-bittle-robot-dog-raspberry-pi)
+- [使用 Petoi 开源四足机器人制作的 Raspberry Pi 机器人项目](https://www.petoi.com/blogs/blog/raspberry-pi-robotics-projects-with-petoi-open-source-quadruped-robots)
+- [在我们的机器人上进行的 NVIDIA Issac 模拟和强化学习](https://www.youtube.com/playlist?list=PLHMFXft_rV6MWNGyofDzRhpatxZuUZMdg)
+- [使用 Bittle 和 Raspberry Pi 开发视觉和激光雷达 SLAM](https://www.youtube.com/watch?v=uXpQUIF_Jyk&list=PLHMFXft_rV6MWNGyofDzRhpatxZuUZMdg&index=6)
+- [使用 Petoi Bittle 和 Raspberry Pi 进行基于 Tiny 机器学习模型的模仿学习](https://www.learnwitharobot.com/p/imitation-learning-with-petoi-bittle)
+- [使用 AWS 实现机器人车队的 IoT 自动化以提高工人安全](https://www.petoi.com/blogs/blog/aws-iot-robot-fleet-demo-with-petoi-bittle)
+- [3D 打印配件](https://www.petoi.com/blogs/blog/petoi-bittle-bittle-x-robots-3d-printed-robot-accessories)
+- 使用 OpenCat 构建自己的 [DIY 3D 打印机器人宠物](https://www.petoi.com/pages/3d-printed-robot-dog-robot-cat)
 
 ![](https://github.com/PetoiCamp/NonCodeFiles/blob/master/gif/stand.gif?raw=true)
 
 ![](https://github.com/PetoiCamp/NonCodeFiles/blob/master/gif/NybbleBalance.gif?raw=true)
 
-We've successfully crowdfunded these two mini robot kits and shipped thousands of units worldwide. 
+我们成功地为这两个迷你机器人套件进行了众筹，并已向世界各地发货数千个单位。
 
-With our [customized Arduino-Uno board](https://www.petoi.com/products/nyboard-customized-arduino-board) and [high-performance servos](https://www.petoi.com/products/quadruped-robot-dog-bittle-servo-set) coordinating all instinctive and sophisticated movements(walking, running, jumping, backflipping), one can clip on [various sensors](https://www.petoi.com/products/petoi-sensor-pack) and [camera](https://www.petoi.com/products/intelligent-camera-module) to bring in perception and inject artificial intelligence capabilities by mounting a Raspberry Pi or other AI chips(such as Nvidia Jetson Nano) through wired/wireless connections. 
- 
-Please see [Petoi FAQs](https://www.petoi.com/pages/faq?utm_source=github&utm_medium=code&utm_campaign=faq) for more info.
+通过我们的 [定制 Arduino Uno 板](https://www.petoi.com/products/nyboard-customized-arduino-board) 和 [高性能伺服器](https://www.petoi.com/products/quadruped-robot-dog-bittle-servo-set)，协调所有本能和复杂动作（行走、跑步、跳跃、后空翻），你可以安装各种传感器和摄像头来引入感知能力，并通过有线或无线连接安装 Raspberry Pi 或其他 AI 芯片（如 Nvidia Jetson Nano）来注入人工智能能力。
 
-Also, Check out [all of the OpenCat and Petoi robot user showcases](https://www.petoi.camp/forum/showcase).
+请参阅 [Petoi 常见问题解答](https://www.petoi.com/pages/faq?utm_source=github&utm_medium=code&utm_campaign=faq) 获取更多信息。
+
+此外，请查看 [所有 OpenCat 和 Petoi 机器人用户的展示](https://www.petoi.camp/forum/showcase)。
 
 ![](https://github.com/PetoiCamp/NonCodeFiles/blob/master/gif/ball.gif?raw=true)
 
-## Setup  Process:
+## 设置过程：
 
-OpenCat software works on both Nybble and Bittle, controlled by NyBoard based on ATmega328P. More detailed documentation can be found at the [Petoi Doc Center](https://docs.petoi.com).
+OpenCat 软件适用于 Nybble 和 Bittle，由基于 ATmega328P 的 NyBoard 控制。更详细的文档可以在 [Petoi 文档中心](https://docs.petoi.com) 查找。
 
-To configure the board:
+配置板子：
 
-1. Download the repo and unfold. Remove the **-main** (or any branch name) suffix of the folder.
+1. 下载仓库并解压。移除文件夹名称中的 **-main**（或其他分支名称）后缀。
 
-2. Open the file OpenCat.ino, select your robot and board version.
+2. 打开文件 OpenCat.ino，选择你的机器人和板子版本。
 ```cpp
-#define BITTLE    //Petoi 9 DOF robot dog: 1x on head + 8x on leg
-//#define NYBBLE  //Petoi 11 DOF robot cat: 2x on head + 1x on tail + 8x on leg
+#define BITTLE    //Petoi 9 DOF 机器人狗：头部1个 + 腿部8个
+//#define NYBBLE  //Petoi 11 DOF 机器人猫：头部2个 + 尾巴1个 + 腿部8个
 
 //#define NyBoard_V0_1
 //#define NyBoard_V0_2
@@ -60,77 +59,77 @@ To configure the board:
 //#define NyBoard_V1_1
 ```
 
-3. Comment out ```#define MAIN_SKETCH``` so that it will turn the code to the board configuration mode. Upload and follow the serial prompts to proceed.
+3. 注释掉 ```#define MAIN_SKETCH``` 以便将其代码切换到板子配置模式。上传代码并按照串口提示操作。
 ```cpp
 // #define MAIN_SKETCH
 ```
 
-4. If you activate ```#define AUTO_INIT```, the program will automatically set up without prompts. It will not reset joint offsets but calibrate the IMU. It's just a convenient option for our production line.
+4. 如果激活 ```#define AUTO_INIT```，程序将自动设置而无需提示。它不会重置关节偏移，但会校准 IMU。这只是我们生产线上方便的一个选项。
 
-5. Plug the USB uploader to the NyBoard and install the driver if no USB port is found under Arduino -> Tools -> Port.
+5. 将 USB 编程器插到 NyBoard 上，如果在 Arduino -> 工具 -> 端口下找不到 USB 端口，请安装驱动。
 
-6. Press the upload button (->) at the top-left corner in Arduino IDE.
+6. 在 Arduino IDE 的左上角点击上传按钮（->）。
 
-7. Open the serial monitor of Arduino IDE. You can find the button either under Tools, or at the top-right corner of the IDE.
+7. 打开 Arduino IDE 的串口监视器。你可以在工具栏找到按钮，或者在 IDE 的右上角找到。
 
-Set the serial monitor as **no line ending** and **115200** baud rate.
-The serial prompts:
+将串口监视器设置为**无行尾**和**115200**波特率。
+串口提示：
 ```
-Reset joint offsets? (Y/n)
+重置关节偏移？(Y/n)
 Y
 ```
 
-Input ‘Y’ and hit enter, if you want to reset all the joint offsets to 0.
+如果你想要将所有关节偏移重置为0，请输入 'Y' 并按回车键。
 
-The program will do the reset, then update the constants and instinctive skills in the static memory.
+程序将执行重置，然后更新静态内存中的常量和本能技能。
 
-8. IMU (Inertial Measurement Unit) calibration.
+8. IMU（惯性测量单元）校准。
 
-The serial prompts:
+串口提示：
 ```
-Calibrate the IMU? (Y/n):
+校准 IMU？(Y/n)：
 Y
 ```
-Input ‘Y’ and hit enter, if you have never calibrated the IMU or want to redo calibration.
+如果你从未校准过 IMU 或者想重新校准，请输入 'Y' 并按回车键。
 
-Put the robot flat on the table and don't touch it. The robot will long beep six times to give you enough time. Then it will read hundreds of sensor data and save the offsets. It will beep when the calibration finishes.
+将机器人平放在桌子上，不要触碰它。机器人会发出六次长鸣声以给你足够的时间。然后它会读取数百个传感器数据并保存偏移值。当校准完成时，它会发出蜂鸣声。
 
-When the serial monitor prints "Ready!", you can close the serial monitor to do the next step.
+当串口监视器显示 "Ready!" 时，你可以关闭串口监视器进行下一步。
 
-9. Uncomment ```#define MAIN_SKETCH``` to make it active. This time the code becomes the normal program for the major functionalities. Upload the code.
+9. 取消注释 ```#define MAIN_SKETCH``` 使其生效。这次代码变为主要功能的正常程序。上传代码。
 ```cpp
 #define MAIN_SKETCH
 ```
-When the serial monitor prints "Ready!", the robot is ready to take your next instructions.
+当串口监视器显示 "Ready!" 时，机器人准备好接收你的下一个指令。
 
-10. If you have never calibrated the joints’ offsets or reset the offsets in Step2, you need to calibrate them. If you boot up the robot with one side up, it will enter the calibration state automatically for you to install the legs. Otherwise, it will enter the normal rest state
+10. 如果你从未校准过关节偏移或在第2步中重置过偏移值，你需要校准它们。如果启动机器人时一侧朝上，它会自动进入校准状态以便安装腿。否则，它将进入正常的休息状态。
 
-11. You can use the serial monitor to calibrate it directly. Or you may plug in the Bluetooth dongle, and use the Petoi app (on Android/iOS) for a more user-friendly interface. The mobile app is available on:
+11. 你可以直接使用串口监视器进行校准。或者插入蓝牙适配器，使用 Petoi 应用程序（Android/iOS）进行更友好的界面。移动应用程序可在以下链接获取：
 
-* IOS: [App Store](https://apps.apple.com/us/app/petoi/id1581548095)
-* Android: [Google Play](https://play.google.com/store/apps/details?id=com.petoi.petoiapp)
+* iOS：[App Store](https://apps.apple.com/us/app/petoi/id1581548095)
+* Android：[Google Play](https://play.google.com/store/apps/details?id=com.petoi.petoiapp)
 
-You can refer to the calibration section in the user manual (https://bittle.petoi.com/6-calibration) and Guide for the Petoi App(https://docs.petoi.com/app-guide).
+你可以参考用户手册中的校准部分（https://bittle.petoi.com/6-calibration）和 Petoi 应用指南（https://docs.petoi.com/app-guide）。
 
-12. you can use the infrared remote or other applications (such as the Petoi App, Python, serial monitor ... etc.) to play with the robot (https://bittle.petoi.com/7-play-with-bittle).
+12. 你可以使用红外遥控器或其他应用程序（如 Petoi 应用程序、Python、串口监视器等）来与机器人互动（https://bittle.petoi.com/7-play-with-bittle）。
 
-For updates:
-* star this repository to receive timely notifications on changes.
-* visit www.petoi.com and [subscribe to our official newsletters](https://www.petoi.com/pages/subscribe-petoi-newsletter) for project announcements. We also host a forum at [petoi.camp](https://www.petoi.com/forum).
-* follow us on [Twitter](https://twitter.com/petoicamp), [Instagram](https://www.instagram.com/petoicamp/), [Facebook](https://www.facebook.com/PetoiCamp/), [Linkedin](https://www.linkedin.com/company/33449768/admin/dashboard/), and [YouTube channel](https://www.youtube.com/c/rongzhongli) for fun videos and community activities.
+关于更新：
+* 给此仓库加星以接收及时的通知。
+* 访问 www.petoi.com 并 [订阅我们的官方新闻通讯](https://www.petoi.com/pages/subscribe-petoi-newsletter) 以获取项目公告。我们还在 [petoi.camp](https://www.petoi.com/forum) 上举办了一个论坛。
+* 在 [Twitter](https://twitter.com/petoicamp)、[Instagram](https://www.instagram.com/petoicamp/)、[Facebook](https://www.facebook.com/PetoiCamp/)、[LinkedIn](https://www.linkedin.com/company/33449768/admin/dashboard/) 和 [YouTube 频道](https://www.youtube.com/c/rongzhongli) 关注我们，获取有趣的视频和社区活动。
 
 ![](https://github.com/PetoiCamp/NonCodeFiles/blob/master/gif/backflip.gif?raw=true)
 
-## Resources:
-* [Advanced tutorials made by users](https://www.youtube.com/playlist?list=PLHMFXft_rV6MWNGyofDzRhpatxZuUZMdg)
-* [Review, open-box, and demos by users](https://www.youtube.com/playlist?list=PLHMFXft_rV6PSS3Qu5yQ-0iPW-ohu1sM3)
-* [OpenCat robot showcase by users](https://www.petoi.com/pages/petoi-open-source-extensions-user-demos-and-hacks)
-* [OpenCat robot gallery](https://www.petoi.com/pages/robot-pet-gallery)
+## 资源：
+* [用户制作的高级教程](https://www.youtube.com/playlist?list=PLHMFXft_rV6MWNGyofDzRhpatxZuUZMdg)
+* [用户评论、开箱和演示](https://www.youtube.com/playlist?list=PLHMFXft_rV6PSS3Qu5yQ-0iPW-ohu1sM3)
+* [用户展示的 OpenCat 机器人](https://www.petoi.com/pages/petoi-open-source-extensions-user-demos-and-hacks)
+* [OpenCat 机器人画廊](https://www.petoi.com/pages/robot-pet-gallery)
 
-OpenCat robots have been used in robotics education for K12 schools and colleges to teach students about STEM, coding, and robotics:
-- [robotics education showcases](https://www.petoi.com/blogs/blog/tagged/showcase+education)
-- [STEM & Robotics Curriculum & Resources for Teaching Coding & Robotics](https://www.petoi.com/pages/resources-curriculum-stem-coding-robot)
-- [Robotics competitions](https://www.petoi.com/blogs/blog/robot-competitions-with-petoi)
-- [Petoi robotics contest](https://www.petoi.com/blogs/blog/petoi-spring-2024-robotics-contest-winners)
+OpenCat 机器人已被用于 K12 学校和大学的机器人教育，以教授学生有关 STEM、编程和机器人技术的知识：
+- [机器人教育展示](https://www.petoi.com/blogs/blog/tagged/showcase+education)
+- [STEM 与机器人课程及教学编码与机器人的资源](https://www.petoi.com/pages/resources-curriculum-stem-coding-robot)
+- [机器人竞赛](https://www.petoi.com/blogs/blog/robot-competitions-with-petoi)
+- [Petoi 机器人比赛](https://www.petoi.com/blogs/blog/petoi-spring-2024-robotics-contest-winners)
 
-The [old repository for OpenCat](https://github.com/PetoiCamp/OpenCat-Old) is too redundant with large image logs and is obsolete with no further updates.
+[OpenCat 的旧仓库](https://github.com/PetoiCamp/OpenCat-Old) 包含大量冗余的图像日志，并且已经过时，不再更新。
